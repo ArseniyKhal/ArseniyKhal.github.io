@@ -1,10 +1,9 @@
 import styles from './Credits.module.scss';
 
-
 export const Credits = () => {
 	return (
-		<section className="credits">
-			<div className="credits__container container">
+		<section className="credits" id="credits">
+			<div className={styles.container}>
 				<div className={styles.credits__body}>
 					<div className="credits__content">
 						<h3 className={styles.credits__title}>Круто, ты дошел до третьего блока</h3>

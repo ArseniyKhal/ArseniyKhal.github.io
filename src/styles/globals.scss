@@ -16,9 +16,13 @@ h6 {
 
 h1 {
 	font-size: 3.25rem;
-	/* @media screen and (max-width: 75em) {
+	@media screen and (width <= 768px) {
 		font-size: 2rem;
-	} */
+	}
+	@media screen and (width <= 375px) {
+		font-size: 1.5rem;
+		line-height: 1.33;
+	}
 }
 
 h2 {
@@ -50,12 +54,11 @@ h6 {
 }
 
 a {
-	font-family: "GraphikLCG", sans-serif;;
+	font-family: "GraphikLCG", sans-serif;
 }
 
 body {
-	// убрать
-		font-family: "GraphikLCG", sans-serif;
+	font-family: "GraphikLCG", sans-serif;
 	color: var(--black);
 	font-style: normal;
 	font-weight: 400;
@@ -70,19 +73,6 @@ body {
 	overflow: hidden;
 }
 
-/* ограничивающий контейнер */
-[class*="__container"] {
-	margin: 0 auto;
-	padding: 0 15px;
-	/* // ширина FullHD 1420px */
-	max-width: 1243px;
-
-	/* // ширина HD 1276px */
-	/* @media screen and (max-width: 85.375em) {
-		max-width: 81.75em;
-	} */
-}
-
 main {
 	flex: 1 1 auto;
 	display: flex;
@@ -90,26 +80,3 @@ main {
 	gap: 80px;
 }
 
-/* // общие стили кнопки */
-.button {
-	cursor: pointer;
-	border-radius: 0.25rem;
-	background-color: var(--light-gray);
-	transition: background-color 0.3s ease 0s;
-	height: 4rem;
-	/* width: 3rem; */
-	/* display: flex; */
-	/* align-items: center; */
-	/* justify-content: center; */
-	color: var(--black);
-	padding: 0 40px;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 1.2;
-	/* &:hover {
-		background-color: $light;
-	}
-	&:active {
-		background-color: $dark;
-	} */
-}

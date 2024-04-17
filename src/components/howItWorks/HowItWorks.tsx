@@ -2,8 +2,8 @@ import styles from './HowItWorks.module.scss';
 
 export const HowItWorks = () => {
 	return (
-		<section className="howItWorks">
-			<div className="howItWorks__container container">
+		<section className="howItWorks" id="howItWorks">
+			<div className={styles.container}>
 				<h2 className={styles.howItWorks__title}>Как это работает</h2>
 				<ul className={styles.howItWorks__body}>
 					<li className={styles.howItWorks__item}>

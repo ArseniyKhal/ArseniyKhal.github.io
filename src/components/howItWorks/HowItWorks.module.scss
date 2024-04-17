@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .howItWorks {
 	&__body {
 		display: flex;
@@ -5,6 +7,7 @@
 	}
 	&__title {
 		text-align: center;
+		margin-bottom: 61px;
 	}
 	&__item {
 		flex: 1 1 0;

@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .firstscreen {
 	min-height: 100dvh;
 	background:
@@ -12,19 +14,35 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@media screen and (width <= 375px) {
+			margin: 0 7%;
+		}
 	}
 	&__title {
 		color: var(--white);
 		margin-bottom: 18px;
+		@media screen and (width <= 375px) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__text {
 		color: var(--white);
-		line-height: 1.78;
+		line-height: 1.75;
 		margin-bottom: 92px;
+		@media screen and (width <= 768px) {
+			font-size: 16px;
+			margin-bottom: 40px;
+		}
+		@media screen and (width <= 375px) {
+			margin-bottom: 26px;
+		}
 	}
-}
-
-.firstscreen__button {
-	line-height: 1.78;
+	&__button {
+		background-color: var(--light-gray);
+		color: var(--black);
+		&:hover {
+			background: var(--white);
+		}
+	}
 }
