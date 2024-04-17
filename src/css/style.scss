@@ -1,0 +1,149 @@
+// обнуляющие стили
+@import "null";
+
+// переменные
+@import "variables";
+
+// шрифты
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400..700&display=swap");
+@font-face {
+	font-family: "Gogh";
+	src:
+		local("Gogh"),
+		url("../fonts/Gogh-ExtraBold.otf") format("opentype"),
+		url("../fonts/Gogh-ExtraBold.ttf") format("truetype"),
+		url("../fonts/Gogh-ExtraBold.woff") format("woff"),
+		url("../fonts/Gogh-ExtraBold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Gogh";
+	font-weight: 700;
+	line-height: 1;
+	color: $textBlack;
+}
+h1 {
+	font-size: 3.5rem;
+	@media screen and (max-width: 75em) {
+		font-size: 2rem;
+	}
+}
+h2 {
+	font-size: 2.5rem;
+	@media screen and (max-width: 75em) {
+		font-size: 1.75rem;
+	}
+}
+h3 {
+	font-size: 1.75rem;
+	@media screen and (max-width: 75em) {
+		font-size: 1.5rem;
+	}
+}
+h4 {
+	font-size: 1.25rem;
+}
+a {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+// ограничивающий контейнер
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 16px;
+	// ширина FullHD 1420px
+	max-width: 90.75em;
+	// ширина HD 1276px
+	@media screen and (max-width: 85.375em) {
+		max-width: 81.75em;
+	}
+}
+
+main {
+	flex: 1 1 auto;
+	margin-top: 4.625rem;
+}
+
+// общие стили кнопки
+.button {
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: $main;
+	transition: background-color 0.3s ease 0s;
+	height: 3rem;
+	width: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		background-color: $light;
+	}
+	&:active {
+		background-color: $dark;
+	}
+}
+
+.social {
+	display: flex;
+	gap: 1rem;
+	&__item {
+		background-color: $socialStatic;
+		box-shadow: 0 0 1.25rem 0 rgba(13, 64, 64, 0.1);
+		border-radius: 0.25rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease 0s;
+		&:hover {
+			background-color: $socialHover;
+		}
+		&:active {
+			background-color: $socialPress;
+		}
+		& a {
+			background-color: $grayWhite;
+		}
+	}
+}
+
+.imagesBox {
+	position: relative;
+	overflow: hidden;
+	background: url("../img/non-image.png") no-repeat center center;
+	background-size: cover;
+	border-radius: 0.5rem;
+	& img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+
