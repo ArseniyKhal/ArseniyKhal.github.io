@@ -56,7 +56,9 @@ h6 {
 a {
 	font-family: "GraphikLCG", sans-serif;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "GraphikLCG", sans-serif;
 	color: var(--black);

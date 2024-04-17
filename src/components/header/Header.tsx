@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import styles from './Header.module.scss';
 import { NavMenu } from '../NavMenu/NavMenu';
-
+import {menuData} from '../../mockData';
+import styles from './Header.module.scss';
 
 export const Header = () => {
 	const [visibleMenu, setVisibleMenu] = useState(false)
@@ -22,10 +22,10 @@ export const Header = () => {
 						<div className={`${styles.burger__line} ${visibleMenu ? styles.active : ''}`} id="burger-line">
 						</div>
 					</div>
-					<NavMenu visibleMenu={false} />
+					<NavMenu visibleMenu={false} menuData={menuData} />
 				</div>
 				<div className={`${styles.header__overlay} ${visibleMenu ? styles.active : ''}`}>
-					<NavMenu visibleMenu={visibleMenu} />
+					<NavMenu visibleMenu={visibleMenu} menuData={menuData} />
 				</div>
 			</div>
 		</header>
