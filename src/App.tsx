@@ -5,7 +5,9 @@ import { HowItWorks } from './components/howItWorks/HowItWorks';
 import { Firstscreen } from './components/firstscreen/Firstscreen';
 import { Reviews } from './components/reviews/Reviews';
 import { Footer } from './components/footer/Footer';
-import './App.css';
+import 'normalize.css/normalize.css';
+import './styles/globals.scss';
+
 
 function App() {
 	return (

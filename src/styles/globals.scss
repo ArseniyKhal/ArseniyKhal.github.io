@@ -1,0 +1,115 @@
+@import "./null.scss";
+@import "./fonts.scss";
+@import "./variabals.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "GraphikLCG", sans-serif;
+	font-weight: 600;
+	line-height: 1.25;
+	color: var(--black);
+}
+
+h1 {
+	font-size: 3.25rem;
+	/* @media screen and (max-width: 75em) {
+		font-size: 2rem;
+	} */
+}
+
+h2 {
+	font-size: 2.5rem;
+	/* @media screen and (max-width: 75em) {
+		font-size: 1.75rem;
+	} */
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 1.4;
+	/* @media screen and (max-width: 75em) {
+		font-size: 1.5rem;
+	} */
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+a {
+	font-family: "GraphikLCG", sans-serif;;
+}
+
+body {
+	// убрать
+		font-family: "GraphikLCG", sans-serif;
+	color: var(--black);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* ограничивающий контейнер */
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 15px;
+	/* // ширина FullHD 1420px */
+	max-width: 1243px;
+
+	/* // ширина HD 1276px */
+	/* @media screen and (max-width: 85.375em) {
+		max-width: 81.75em;
+	} */
+}
+
+main {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+/* // общие стили кнопки */
+.button {
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: var(--light-gray);
+	transition: background-color 0.3s ease 0s;
+	height: 4rem;
+	/* width: 3rem; */
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	color: var(--black);
+	padding: 0 40px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	/* &:hover {
+		background-color: $light;
+	}
+	&:active {
+		background-color: $dark;
+	} */
+}
