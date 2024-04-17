@@ -1,0 +1,23 @@
+.credits__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.credits__body > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+.credits__title {
+  margin-bottom: 18px;
+}
+.credits__text p {
+  line-height: 1.75;
+  color: var(--dark-gray);
+}
+.credits__text p:not(:last-child) {
+  margin-bottom: 24px;
+}

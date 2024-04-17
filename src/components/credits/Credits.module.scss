@@ -1,0 +1,22 @@
+.credits {
+	&__body {
+		display: flex;
+		align-items: center;
+		&>* {
+			flex: 1 1 0;
+		}
+	}
+	
+	&__title {
+		margin-bottom: 18px;
+	}
+	&__text p {
+		line-height: 1.75;
+		color: var(--dark-gray);
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+

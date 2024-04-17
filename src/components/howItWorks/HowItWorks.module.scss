@@ -1,0 +1,33 @@
+.howItWorks {
+	&__body {
+		display: flex;
+		gap: 32px;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__item {
+		flex: 1 1 0;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	&__img {
+		width: 72px;
+		height: 72px;
+	}
+
+	&__subtitle {
+		margin-bottom: 4px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 1.71;
+		color: var(--dark-gray);
+	}
+}
+
+
+
+
+
