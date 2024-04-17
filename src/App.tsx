@@ -4,6 +4,7 @@ import { Credits } from './components/credits/Credits';
 import { HowItWorks } from './components/howItWorks/HowItWorks';
 import { Firstscreen } from './components/firstscreen/Firstscreen';
 import { Reviews } from './components/reviews/Reviews';
+import {Questions} from './components/Questions/Questions';
 import { Footer } from './components/footer/Footer';
 import 'normalize.css/normalize.css';
 import './styles/globals.scss';
@@ -19,6 +20,7 @@ function App() {
 					<HowItWorks />
 					<Credits />
 					<Reviews />
+					<Questions />
 				</main>
 				<Footer />
 			</div>

@@ -1,0 +1,66 @@
+@import "../../styles/mixins.scss";
+
+.questions {
+	&__title {
+		color: var(--black);
+		text-align: center;
+		margin-bottom: 41px;
+		@media screen and (width < 375px) {
+			margin-bottom: 26px;
+		}
+	}
+	&__body {
+		margin: 0 auto;
+		max-width: 1008px;
+	}
+	&__item {
+		cursor: pointer;
+		border-top: 1px solid var(--extralight-gray);
+		padding: 24px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 18px;
+		line-height: 1.78;
+		@media screen and (width <= 375px) {
+			font-size: 16px;
+			padding: 16px 0;
+		}
+		& > * {
+			transition: all 0.3s ease;
+			padding-right: 72px;
+			@media screen and (width <= 375px) {
+				padding-right: 60px;
+			}
+		}
+		&:hover .questions__question {
+			color: var(--primary);
+		}
+	}
+	&__question {
+		position: relative;
+		font-weight: 600;
+		&::after {
+			content: url("../../../public/icon/plus.svg");
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: all 0.3s ease;
+		}
+		&.open::after {
+			transform: translateY(-50%) rotate(45deg);
+		}
+	}
+	&__answer {
+		color: var(--dark-gray);
+		overflow: hidden;
+		max-height: 0;
+		&.open {
+			margin-top: 24px;
+			max-height: 1000px;
+		}
+	}
+}
