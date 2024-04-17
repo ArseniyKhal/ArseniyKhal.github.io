@@ -12,7 +12,7 @@ export const menuData = [
 	{
 		id: 3,
 		title: 'Вопросы и ответы',
-		link: '#'
+		link: '#questions'
 	},
 	{
 		id: 4,
