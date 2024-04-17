@@ -1,4 +1,6 @@
 import styles from './Reviews.module.scss';
+import { SwiperComponent } from '../swiper/Swiper';
+
 
 export const Reviews = () => {
 	return (
@@ -6,7 +8,20 @@ export const Reviews = () => {
 			<div className={styles.container}>
 				<div className={styles.reviews__body}>
 					<h3 className={styles.reviews__title}>Отзывы</h3>
-					<div className="reviews__swiper swiper">
+
+
+
+					
+
+
+
+					<SwiperComponent />
+
+
+
+
+
+					{/* <div className="reviews__swiper swiper">
 						<div className={styles.slide}>
 							<div className={styles.slide__title}>
 								<img className="slide__img" src="img/reviews/user1.png" alt="slide picture" />
@@ -37,7 +52,8 @@ export const Reviews = () => {
 							</div>
 							<p className={styles.slide__text}>Каждый из нас понимает очевидную вещь: перспективное планирование предоставляет широкие возможности для анализа существующих паттернов поведения.</p>
 						</div>
-					</div>
+					</div> */}
+
 				</div>
 			</div>
 		</section>
