@@ -2,18 +2,18 @@
 
 .info {
 	background-color: var(--extralight-gray);
-	padding: 68px 0;
+	padding: convertPXtoREM(68) 0;
 	@media screen and (width <= 768px) {
-		padding: 20px 0;
+		padding: convertPXtoREM(20) 0;
 	}
 	&__body {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		column-gap: 32px;
-		row-gap: 37px;
+		column-gap: convertPXtoREM(32);
+		row-gap: convertPXtoREM(37);
 		@media screen and (width <= 768px) {
 			grid-template-columns: 1fr;
-			row-gap: 20px;
+			row-gap: convertPXtoREM(20);
 		}
 	}
 	&__item {
@@ -21,12 +21,10 @@
 	}
 	&__title {
 		font-weight: 600;
-		font-size: 18px;
-		margin-bottom: 17px;
+		font-size: convertPXtoREM(18);
+		margin-bottom: convertPXtoREM(17);
 		@media screen and (width <= 768px) {
-			margin-bottom: 14px;
+			margin-bottom: convertPXtoREM(14);
 		}
-	}
-	&__text {
 	}
 }

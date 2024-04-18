@@ -1,17 +1,11 @@
 // ограничивающий контейнер
-	.container {
+.container {
 	margin: 0 auto;
 	padding: 0 20px;
 	max-width: 1250px;
 	@media screen and (width <= 375px) {
 		padding: 0 15px;
-		
-		
 	}
-	/* // ширина HD 1276px */
-	/* @media screen and (max-width: 85.375em) {
-		max-width: 81.75em;
-	} */
 }
 
 // общие стили кнопки
@@ -34,12 +28,7 @@
 	}
 }
 
-
-
-
-
-@function convertPX($size) {
-    @return $size*0.06944444444vw
-};
-
-
+// конвертация PX в REM
+@function convertPXtoREM($size) {
+	@return #{calc($size / 16)}rem;
+}

@@ -1,9 +1,9 @@
 @import "../../styles/mixins.scss";
 
 .info {
-	margin-bottom: 80px;
+	margin-bottom: convertPXtoREM(80);
 	@media screen and (width <= 768px) {
-		margin-bottom: 56px;
+		margin-bottom: convertPXtoREM(56);
 	}
 	&__body {
 		max-width: 800px;
@@ -11,9 +11,9 @@
 	}
 	&__title {
 		line-height: 1.4;
-		margin-bottom: 44px;
+		margin-bottom: convertPXtoREM(44);
 		@media screen and (width <= 768px) {
-			margin-bottom: 30px;
+			margin-bottom: convertPXtoREM(30);
 		}
 	}
 }
@@ -21,22 +21,22 @@
 .form {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	row-gap: 30px;
-	column-gap: 32px;
+	row-gap: convertPXtoREM(30);
+	column-gap: convertPXtoREM(32);
 	@media screen and (width <= 768px) {
-		column-gap: 24px;
+		column-gap: convertPXtoREM(24);
 	}
 	@media screen and (width < 700px) {
 		grid-template-columns: 1fr;
-		row-gap: 20px;
+		row-gap: convertPXtoREM(20);
 	}
 	&__input {
 		background-color: var(--extralight-gray);
 		border-radius: 4px;
-		height: 64px;
+		height: convertPXtoREM(64);
 		width: 100%;
-		padding: 16px;
-		font-size: 18px;
+		padding: convertPXtoREM(16);
+		font-size: convertPXtoREM(18);
 		color: var(--black);
 		border: 2px solid var(--extralight-gray);
 		transition: all 0.3s ease;
@@ -85,8 +85,8 @@
 		& + label::before {
 			content: "";
 			display: inline-block;
-			width: 1.5rem;
-			height: 1.5rem;
+			width: convertPXtoREM(24);
+			height: convertPXtoREM(24);
 			flex-shrink: 0;
 			flex-grow: 0;
 			margin-right: 0.5rem;
@@ -98,8 +98,5 @@
 		&:checked + label::before {
 			background-image: url("../../../public/icon/checkboxC.svg");
 		}
-	}
-
-	&__button {
 	}
 }

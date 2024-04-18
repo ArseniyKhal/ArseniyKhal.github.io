@@ -19,22 +19,22 @@
 	}
 	&__title {
 		color: var(--white);
-		margin-bottom: 18px;
+		margin-bottom: convertPXtoREM(18);
 		@media screen and (width <= 375px) {
-			margin-bottom: 10px;
+			margin-bottom: convertPXtoREM(10);
 		}
 	}
 
 	&__text {
 		color: var(--white);
 		line-height: 1.75;
-		margin-bottom: 92px;
+		margin-bottom: convertPXtoREM(92);
 		@media screen and (width <= 768px) {
-			font-size: 16px;
-			margin-bottom: 40px;
+			font-size: convertPXtoREM(16);
+			margin-bottom: convertPXtoREM(40);
 		}
 		@media screen and (width <= 375px) {
-			margin-bottom: 26px;
+			margin-bottom: convertPXtoREM(26);
 		}
 	}
 	&__button {

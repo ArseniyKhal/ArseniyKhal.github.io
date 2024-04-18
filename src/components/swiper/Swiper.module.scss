@@ -1,17 +1,17 @@
 @import "../../styles/mixins.scss";
 
 .slide {
-	border-radius: 8px;
+	border-radius: convertPXtoREM(8);
 	box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.1);
 	background: var(--white);
 	display: flex;
 	flex-direction: column;
-	padding: 22px;
-	gap: 20px;
+	padding: convertPXtoREM(22);
+	gap: convertPXtoREM(20);
 	height: 100%;
 	&__title {
 		display: flex;
-		gap: 16px;
+		gap: convertPXtoREM(16);
 		font-weight: 600;
 		line-height: 1.5;
 		& img {

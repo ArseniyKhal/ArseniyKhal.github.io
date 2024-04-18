@@ -2,9 +2,9 @@
 
 .questions {
 	&__title {
-		margin-bottom: 41px;
+		margin-bottom: convertPXtoREM(41);
 		@media screen and (width < 375px) {
-			margin-bottom: 26px;
+			margin-bottom: convertPXtoREM(26);
 		}
 	}
 	&__body {
@@ -14,21 +14,21 @@
 	&__item {
 		cursor: pointer;
 		border-top: 1px solid var(--extralight-gray);
-		padding: 24px 0;
+		padding: convertPXtoREM(24) 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		font-size: 18px;
+		font-size: convertPXtoREM(18);
 		line-height: 1.78;
 		@media screen and (width <= 375px) {
-			font-size: 16px;
-			padding: 16px 0;
+			font-size: convertPXtoREM(16);
+			padding: convertPXtoREM(16) 0;
 		}
 		& > * {
 			transition: all 0.3s ease;
-			padding-right: 72px;
+			padding-right: convertPXtoREM(72);
 			@media screen and (width <= 375px) {
-				padding-right: 60px;
+				padding-right: convertPXtoREM(60);
 			}
 		}
 		&:hover .questions__question {
@@ -57,7 +57,7 @@
 		overflow: hidden;
 		max-height: 0;
 		&.open {
-			margin-top: 24px;
+			margin-top: convertPXtoREM(24);
 			max-height: 1000px;
 		}
 	}

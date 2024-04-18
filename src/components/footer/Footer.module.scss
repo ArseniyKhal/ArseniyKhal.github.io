@@ -1,9 +1,11 @@
+@import "../../styles/mixins.scss";
+
 .footer {
-	min-height: 88px;
+	min-height:convertPXtoREM(88);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 18px;
+	font-size: convertPXtoREM(18);
 	line-height: 1.78;
 	color: var(--black);
 	border-top: 1px solid var(--light-gray);

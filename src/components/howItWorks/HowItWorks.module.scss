@@ -3,7 +3,7 @@
 .howItWorks {
 	&__body {
 		display: flex;
-		gap: 32px;
+		gap: convertPXtoREM(32);
 		@media screen and (width <= 768px) {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
@@ -14,46 +14,41 @@
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 61px;
+		margin-bottom: convertPXtoREM(61);
 		@media screen and (width <= 768px) {
-			margin-bottom: 42px;
+			margin-bottom: convertPXtoREM(42);
 		}
 		@media screen and (width <= 375px) {
-			margin-bottom: 26px;
+			margin-bottom: convertPXtoREM(26);
 		}
 	}
 	&__item {
 		flex: 1 1 0;
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: convertPXtoREM(16);
 		@media screen and (width <= 768px) {
 			flex-direction: row;
 			&:not(:last-child) {
-				margin-bottom: 32px;
+				margin-bottom: convertPXtoREM(32);
 			}
 		}
 	}
 	&__img {
-		width: 72px;
-		height: 72px;
+		width: convertPXtoREM(72);
+		height: convertPXtoREM(72);
 		@media screen and (width <= 768px) {
-			width: 56px;
-		height: 56px;
+			width: convertPXtoREM(56);
+			height: convertPXtoREM(56);
 		}
 	}
 
 	&__subtitle {
-		margin-bottom: 4px;
+		margin-bottom: convertPXtoREM(4);
 	}
 	&__text {
-		font-size: 14px;
+		font-size: convertPXtoREM(14);
 		line-height: 1.71;
 		color: var(--dark-gray);
 	}
 }
-
-
-
-
-

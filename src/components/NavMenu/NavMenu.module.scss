@@ -9,7 +9,7 @@
 	}
 		&__list {
 		display: flex;
-		gap: 24px;
+		gap: convertPXtoREM(24);
 	}
 	&__link {
 		display: flex;
@@ -17,8 +17,8 @@
 		width: 100%;
 		height: 100%;
 		font-weight: 400;
-		font-size: 16px;
-		line-height: 175%;
+		font-size: convertPXtoREM(16);
+		line-height: 1.75;
 		color: var(--white);
 		&:hover {
 			text-decoration: underline;
@@ -40,7 +40,7 @@
 		display: flex;
 		& .menu__list {
 			flex-direction: column;
-			padding: 0 16px;
+			padding: 0 convertPXtoREM(16);
 			gap: 0;
 			width: 100%;
 		}
@@ -53,10 +53,10 @@
 		& .menu__link {
 			flex-direction: column;
 			font-weight: 400;
-			font-size: 18px;
+			font-size: convertPXtoREM(18);
 			line-height: 1.78;
 			color: var(--gray);
-			height: 64px;
+			height: convertPXtoREM(64);
 		}
 	}
 }

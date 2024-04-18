@@ -1,5 +1,6 @@
 @import "./null.scss";
 @import "./fonts.scss";
+@import "./mixins.scss";
 @import "./variabals.scss";
 
 h1,
@@ -16,48 +17,48 @@ h6 {
 }
 
 h1 {
-	font-size: 3.25rem;
+	font-size: convertPXtoREM(52);
 	@media screen and (width <= 768px) {
-		font-size: 2rem;
+		font-size: convertPXtoREM(32);
 	}
 	@media screen and (width <= 375px) {
-		font-size: 1.5rem;
+		font-size: convertPXtoREM(24);
 		line-height: 1.33;
 	}
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: convertPXtoREM(40);
 	@media screen and (width <= 375px) {
-		font-size: 1.5rem;
+		font-size: convertPXtoREM(24);
 	}
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: convertPXtoREM(32);
 	line-height: 1.4;
 	@media screen and (width <= 768px) {
-		font-size: 1.25rem;
+		font-size: convertPXtoREM(20);
 	}
 }
 
 h4 {
-	font-size: 1.5rem;
+	font-size: convertPXtoREM(24);
 }
 
 h5 {
-	font-size: 1.25rem;
+	font-size: convertPXtoREM(20);
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: convertPXtoREM(16);
 	line-height: 1.5;
 }
 
 a {
 	font-family: "GraphikLCG", sans-serif;
 }
-html{
+html {
 	scroll-behavior: smooth;
 }
 body {
@@ -80,8 +81,8 @@ main {
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
-	gap: 80px;
+	gap: convertPXtoREM(80);
 	@media screen and (width <= 768px) {
-		gap: 56px;
+		gap: convertPXtoREM(56);
 	}
 }

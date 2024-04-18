@@ -4,9 +4,9 @@
 	&__body {
 		display: flex;
 		align-items: center;
-		gap: 32px;
+		gap: convertPXtoREM(32);
 		& > * {
-			width: calc(50% - 17px);
+			width: calc(50% - convertPXtoREM(17));
 			flex: 1 1 0;
 			@media screen and (width <= 768px) {
 				width: calc(50% - 12px);
@@ -16,16 +16,16 @@
 			}
 		}
 		@media screen and (width <= 768px) {
-			gap: 24px;
+			gap: convertPXtoREM(24);
 		}
 		@media screen and (width <= 700px) {
 			flex-direction: column;
 		}
 	}
 	&__title {
-		margin-bottom: 18px;
+		margin-bottom: convertPXtoREM(18);
 		@media screen and (width <= 768px) {
-			margin-bottom: 15px;
+			margin-bottom: convertPXtoREM(15);
 		}
 		@media screen and (width > 700px) {
 			text-align: left;
@@ -38,7 +38,7 @@
 			text-align: center;
 		}
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: convertPXtoREM(24);
 		}
 	}
 	&__picture {

@@ -22,10 +22,10 @@ export const Header = () => {
 						<div className={`${styles.burger__line} ${visibleMenu ? styles.active : ''}`} id="burger-line">
 						</div>
 					</div>
-					<NavMenu visibleMenu={false} menuData={menuData} />
+					<NavMenu visibleMenu={false} setVisibleMenu={setVisibleMenu} menuData={menuData} />
 				</div>
 				<div className={`${styles.header__overlay} ${visibleMenu ? styles.active : ''}`}>
-					<NavMenu visibleMenu={visibleMenu} menuData={menuData} />
+					<NavMenu visibleMenu={visibleMenu} setVisibleMenu={setVisibleMenu} menuData={menuData} />
 				</div>
 			</div>
 		</header>
