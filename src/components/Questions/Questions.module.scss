@@ -2,8 +2,6 @@
 
 .questions {
 	&__title {
-		color: var(--black);
-		text-align: center;
 		margin-bottom: 41px;
 		@media screen and (width < 375px) {
 			margin-bottom: 26px;

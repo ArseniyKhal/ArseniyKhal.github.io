@@ -1,0 +1,105 @@
+@import "../../styles/mixins.scss";
+
+.info {
+	margin-bottom: 80px;
+	@media screen and (width <= 768px) {
+		margin-bottom: 56px;
+	}
+	&__body {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	&__title {
+		line-height: 1.4;
+		margin-bottom: 44px;
+		@media screen and (width <= 768px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 30px;
+	column-gap: 32px;
+	@media screen and (width <= 768px) {
+		column-gap: 24px;
+	}
+	@media screen and (width < 700px) {
+		grid-template-columns: 1fr;
+		row-gap: 20px;
+	}
+	&__input {
+		background-color: var(--extralight-gray);
+		border-radius: 4px;
+		height: 64px;
+		width: 100%;
+		padding: 16px;
+		font-size: 18px;
+		color: var(--black);
+		border: 2px solid var(--extralight-gray);
+		transition: all 0.3s ease;
+		position: relative;
+		&::placeholder {
+			color: var(--gray);
+		}
+		&:focus {
+			background-color: var(--white);
+			border: 2px solid var(--mid-grey);
+		}
+		&:hover {
+			background-color: var(--light-gray);
+			border: 2px solid var(--mid-grey);
+		}
+		&:active {
+			background-color: var(--white);
+			border: 2px solid var(--mid-grey);
+		}
+		&.invalid {
+			border: 2px solid var(--dangerous);
+			background-color: var(--white);
+			&::before {
+				content: url("../../../public/icon/cancel.svg");
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				transition: all 0.3s ease;
+			}
+		}
+	}
+
+	&__checkbox {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		& + label {
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			cursor: pointer;
+		}
+		& + label::before {
+			content: "";
+			display: inline-block;
+			width: 1.5rem;
+			height: 1.5rem;
+			flex-shrink: 0;
+			flex-grow: 0;
+			margin-right: 0.5rem;
+			background-image: url("../../../public/icon/checkboxS.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		&:checked + label::before {
+			background-image: url("../../../public/icon/checkboxC.svg");
+		}
+	}
+
+	&__button {
+	}
+}
