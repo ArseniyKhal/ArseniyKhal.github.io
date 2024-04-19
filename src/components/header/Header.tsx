@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavMenu } from '../navMenu2/NavMenu';
+import { NavMenu } from '../navMenu/NavMenu';
 import {menuData} from '../../mockData';
 import styles from './Header.module.scss';
 
