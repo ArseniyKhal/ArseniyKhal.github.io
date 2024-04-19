@@ -1,14 +1,38 @@
 @import "../../styles/mixins.scss";
 
+.swiper__body {
+	padding: 32px 55px 45px 55px;
+	position: relative;
+	@media screen and (width <= 768px) {
+		padding: 0;
+		padding-bottom: 35px;
+		margin: -16px;
+	}
+}
+.mySwiper {
+	margin: -16px;
+	padding: 16px;
+}
+
+.swiper__buttons {
+	@media screen and (width <= 768px) {
+		display: none;
+	}
+}
+
 .slide {
-	border-radius: convertPXtoREM(8);
-	box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.1);
-	background: var(--white);
-	display: flex;
-	flex-direction: column;
-	padding: convertPXtoREM(22);
-	gap: convertPXtoREM(20);
+	padding: 32px 16px;
 	height: 100%;
+	&__content {
+		box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.1);
+		background: var(--white);
+		border-radius: convertPXtoREM(8);
+		display: flex;
+		flex-direction: column;
+		padding: convertPXtoREM(22);
+		gap: convertPXtoREM(20);
+		height: 100% !important;
+	}
 	&__title {
 		display: flex;
 		gap: convertPXtoREM(16);
@@ -36,21 +60,3 @@
 		height: 100%;
 	}
 }
-.swiper {
-	width: 100%;
-	height: 100%;
-	padding: 0 220px;
-}
-
-.swiper-slide {
-	height: 300px;
-	height: 100%;
-}
-
-.swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
