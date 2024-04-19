@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b634a05.css",
+    "main.js": "/static/js/main.3a458974.js",
+    "static/media/firstscreen.png": "/static/media/firstscreen.66ed08daeba30fb27403.png",
+    "static/media/GraphikLCG-Regular.eot": "/static/media/GraphikLCG-Regular.131ad5e8eab917fe9b29.eot",
+    "static/media/GraphikLCG-Regular.ttf": "/static/media/GraphikLCG-Regular.35faf011ef568c1b8540.ttf",
+    "static/media/GraphikLCG-Regular.woff": "/static/media/GraphikLCG-Regular.b4fc93d5073c5d6f5235.woff",
+    "static/media/GraphikLCG-Regular.woff2": "/static/media/GraphikLCG-Regular.92a1ff709799ec31f9f0.woff2",
+    "static/media/creditsBG.png": "/static/media/creditsBG.8698716868b8171618f2.png",
+    "static/media/plus.svg": "/static/media/plus.10ff148a6ce156ba479c.svg",
+    "static/media/arrow.svg": "/static/media/arrow.ddb812008961fd327760.svg",
+    "static/media/cancel.svg": "/static/media/cancel.d1d5843b063832f16319.svg",
+    "static/media/checkboxC.svg": "/static/media/checkboxC.60acad6fb76669dc8ade.svg",
+    "index.html": "/index.html",
+    "static/media/checkboxS.svg": "/static/media/checkboxS.439083ec4fa8f7f05609.svg",
+    "main.3b634a05.css.map": "/static/css/main.3b634a05.css.map",
+    "main.3a458974.js.map": "/static/js/main.3a458974.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b634a05.css",
+    "static/js/main.3a458974.js"
+  ]
+}
