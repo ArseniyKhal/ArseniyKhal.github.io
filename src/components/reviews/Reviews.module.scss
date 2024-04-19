@@ -4,10 +4,10 @@
 	background-color: var(--extralight-gray);
 	&__body {
 		padding: convertPXtoREM(57) 0 convertPXtoREM(45) 0;
-	}
+			}
 	&__title {
 		font-size: convertPXtoREM(40);
-		margin-bottom: convertPXtoREM(32);
+		// margin-bottom: convertPXtoREM(16);
 	}
 }
 
